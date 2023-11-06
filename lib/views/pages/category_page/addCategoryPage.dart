@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_view.dart';
 
 import '../../../consts/app_fonts.dart';
 import '../../../model/category_model.dart';

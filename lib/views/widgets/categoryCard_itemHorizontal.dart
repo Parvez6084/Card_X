@@ -1,18 +1,14 @@
 import 'dart:math';
 
-import 'package:card_x/db/db_sqlite.dart';
-import 'package:card_x/model/contact_model.dart';
 import 'package:card_x/model/category_model.dart';
 import 'package:card_x/routes/app_routes.dart';
 import 'package:countup/countup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:qr_flutter/qr_flutter.dart';
 
 import '../../consts/app_images.dart';
 import '../../utils/utils.dart';
 import '../dialogs/custom_alertDialog.dart';
-import '../pages/category_page/categoryPageController.dart';
 
 class CategoryCardItemHorizontal extends GetView {
   final CategoryModel item;

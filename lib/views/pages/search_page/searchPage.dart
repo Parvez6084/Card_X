@@ -1,13 +1,7 @@
-import 'package:card_x/db/db_sqlite.dart';
-import 'package:card_x/views/widgets/businessCard_item.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_view.dart';
 
 import '../../../consts/app_fonts.dart';
-import '../../../db/sample_data.dart';
-import '../../../model/contact_model.dart';
-import '../../../services/remote_service.dart';
 import '../../widgets/businessCard_itemHorizontal.dart';
 import '../../widgets/text_field_container.dart';
 import 'searchPageController.dart';

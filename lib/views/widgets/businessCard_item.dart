@@ -22,18 +22,11 @@ class BusinessCard extends GetView {
         width: size.width * .9,
         decoration: BoxDecoration(
            image: DecorationImage(
-                image:AssetImage( 1==2?
-                    Utils.randomImage[Random().nextInt(11)]
-                        : Utils.gradientImage[Random().nextInt(5)]),
+                image:AssetImage( 1==2? Utils.randomImage[Random().nextInt(11)] : Utils.gradientImage[Random().nextInt(5)]),
                 fit: BoxFit.fill
             ),
-          /*   gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            stops: [0.1, 0.9],
-            colors: Utils.gradientColors[Random().nextInt(9)]
-          ),*/
-         // color: Utils.solidColors[Random().nextInt(11)],
+            // gradient: LinearGradient( begin: Alignment.topRight, end: Alignment.bottomLeft, stops: [0.1, 0.9], colors: Utils.gradientColors[Random().nextInt(9)]),
+           //  color: Utils.solidColors[Random().nextInt(11)],
           borderRadius: const BorderRadius.all(Radius.circular(16),),
         ),
         child: Container(
@@ -42,9 +35,7 @@ class BusinessCard extends GetView {
             children: [
               Positioned(top: 0,left: 0, child: Text(item.fullName!,style: TextStyle(fontSize: 16,color: Colors.white,fontWeight: FontWeight.w700))),
               Positioned(top: 24,left: 0,child: Text(item.designation!,style: TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.w400))),
-              Positioned(
-                top: 50,
-                left: 0,
+              Positioned(top: 50, left: 0,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,9 +57,7 @@ class BusinessCard extends GetView {
                   ],
                 ),
               ),
-              Positioned(
-                bottom: 0,
-                right: 0,
+              Positioned(bottom: 0, right: 0,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -90,17 +79,12 @@ class BusinessCard extends GetView {
                   ],
                 ),
               ),
-              Positioned( bottom:0, left: 0,child: IconButton(onPressed: (){}, icon: Icon(Icons.favorite, size: 32,color: Colors.white,))),
-              Positioned(top:0,right:0,child:
-              Container(
-                  decoration:BoxDecoration( borderRadius: BorderRadius.all(Radius.circular(8)),border: Border.all(color: Colors.white,width: 2)),
-                  child: QrImage(
-                data: item.toQRText(),
-                version: QrVersions.auto,
-                foregroundColor: Colors.white,
-                size: 60,
-                gapless: false,
-              )))
+             Positioned(top:0,right:0,child:
+                Container(
+                    decoration:BoxDecoration( borderRadius: BorderRadius.all(Radius.circular(8)),border: Border.all(color: Colors.white,width: 2)),
+                    child: QrImageView( data: item.toQRText(), version: QrVersions.auto, foregroundColor: Colors.white, size: 60, gapless: false,)
+                )
+             )
             ],
           ),
         ),

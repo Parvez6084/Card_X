@@ -21,8 +21,7 @@ class ScanPage extends GetView<ScanPageController> {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         elevation: 0,
-        title: Text(
-          'Scan',
+        title: Text('Scan',
           style: TextStyle(
               fontSize: 24,
               color: Colors.black,
@@ -61,8 +60,7 @@ class ScanPage extends GetView<ScanPageController> {
             SizedBox(
               height: 24,
             ),
-            Text(
-              'Choose One',
+            Text('Choose One',
               style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
@@ -94,11 +92,11 @@ class ScanPage extends GetView<ScanPageController> {
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Icon(Icons.camera, size: 56, color: Colors.white),
+                                Icon(Icons.camera, size: 40, color: Colors.white),
                                 Text(
                                   'Camera',
                                   style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize:14,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.white),
                                 ),
@@ -130,11 +128,11 @@ class ScanPage extends GetView<ScanPageController> {
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Icon(Icons.image, size: 56, color: Colors.white),
+                                Icon(Icons.image, size: 40, color: Colors.white),
                                 Text(
                                   'Gallery',
                                   style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 14,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.white),
                                 ),
@@ -163,11 +161,11 @@ class ScanPage extends GetView<ScanPageController> {
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Icon(Icons.add, size: 56, color: Colors.white),
+                                Icon(Icons.add, size: 40, color: Colors.white),
                                 Text(
                                   'Manual',
                                   style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 16,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.white),
                                 ),

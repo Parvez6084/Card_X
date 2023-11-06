@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:card_x/consts/app_images.dart';
 import 'package:flutter/material.dart';

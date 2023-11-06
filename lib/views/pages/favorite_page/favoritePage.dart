@@ -2,8 +2,6 @@
 import 'package:card_x/views/widgets/businessCard_itemHorizontal.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_state_manager/src/simple/get_view.dart';
 
 import '../../../consts/app_fonts.dart';
 import '../../../db/sample_data.dart';

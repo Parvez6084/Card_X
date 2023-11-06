@@ -1,6 +1,5 @@
 import 'package:card_x/db/db_sqlite.dart';
 import 'package:card_x/model/category_model.dart';
-import 'package:card_x/model/contact_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

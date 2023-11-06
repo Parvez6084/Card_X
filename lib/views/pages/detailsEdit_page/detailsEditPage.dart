@@ -96,7 +96,7 @@ class DetailsEditPage extends GetView<DetailsEditPageController> {
                                     itemBuilder: (String value) => getDropDownMenuItem(value),
                                     focusedItemDecoration: _getDslDecoration(),
                                     onItemSelectedListener: (item, index, context) {
-                                      Scaffold.of(context).showSnackBar(SnackBar(content: Text(item)));
+                                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(item)));
                                     }),
                                 padding: EdgeInsets.only(left: 12))),
                         Padding(

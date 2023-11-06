@@ -28,8 +28,7 @@ class ScanPageController extends GetxController {
       print('path --> $path');
       final inputImage = InputImage.fromFilePath(path!);
       final textDetector = GoogleMlKit.vision.textDetector();
-      final RecognisedText recognisedText =
-          await textDetector.processImage(inputImage);
+      final RecognisedText recognisedText = await textDetector.processImage(inputImage);
 
       var tempData = <String>[];
       for (var block in recognisedText.blocks) {
@@ -77,9 +76,7 @@ class ScanPageController extends GetxController {
               child: new Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  new CircularProgressIndicator(
-                    color: Colors.white,
-                  ),
+                  CircularProgressIndicator(color: Colors.white,),
                   SizedBox(width: 24),
                   new Text(
                     'Please wait...',
@@ -96,8 +93,7 @@ class ScanPageController extends GetxController {
       new Future.delayed(new Duration(seconds: 3), () {
         scanDone.value = false;
         Navigator.pop(context);
-        Get.toNamed(Routes.detailsEditPage,
-            arguments: [imagePath.value, tempData]);
+        Get.toNamed(Routes.detailsEditPage, arguments: [imagePath.value, tempData]);
       });
   }
 

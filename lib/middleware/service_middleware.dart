@@ -12,6 +12,7 @@ class ServiceMiddleware extends GetMiddleware {
   RouteSettings? redirect(String? route) {
     if (isContractEmpty == false)
       return RouteSettings(name: Routes.welcomePage);
+    return null;
   }
 
   @override
